@@ -54,7 +54,7 @@ plainwhite:
 
 # Build settings
 # 오류시 이름만 변경
-theme: Cayman
+# theme: Cayman
 
 plugins:
   - jekyll-seo-tag
