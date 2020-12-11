@@ -12,7 +12,7 @@ promise 객체는 생성자를 통해 만들 수 있는데 이때 생성자의 �
 
 그 후 생성한 promise 객체가 fulfilled 상태가 되는 시점에 객체.then() 안에 설정한 callback 함수가 실행된다.
 
-{% highlight ruby %}
+```javascript
 const p = new Promise((resolve, reject)=>{
   // pending 상태
   setTimeout(()=>{
@@ -24,12 +24,12 @@ p.then(()=>{
   console.log('1000ms 후 fulfilled 되었습니다.');//콜백
 })
 
-{% endhighlight %}
+```
 
 위에서는 promise 객체와 then을 바로 밑에 둬서 큰 상관이 없지만 보통 실무에서 사용시에는 promise 객체가 필요한 부분에서 바로 생성하고 then과 묶어서 사용하는 방식으로 사용한다.
 이는 then을 설정하는 시점을 정확히 하고, 함수 실행과 동시에 pending이 시작하도록 하기 위함으로, 아래와 같이 promise 객체를 생성하면서 리턴하는 함수 p()를 만들어 함수 p() 실행과 동시에 then을 설정한다. 
 
-{% highlight ruby %}
+```javascript
 function p() {
   return new Promise((resolve, reject)=>{
     // pending 상태
@@ -42,10 +42,11 @@ function p() {
 p().then(() => {
   console.log('1000ms 후 fulfilled 되었습니다.');//콜백
 })
-{% endhighlight %}
+```
 
 then과 마찬가지로 promise 객체가 rejected 되는 시점에는 객체.catch() 안에 설정한 callback 함수가 실행된다. 이때 catch()는 체이닝 방식으로 설정이 가능하다.
-{% highlight ruby %}
+
+```javascript
 function p() {
   return new Promise((resolve, reject) => {
     // pending 상태
@@ -62,11 +63,12 @@ p()
   .catch(() => {
     console.log("1000ms 후 rejected 되었습니다."); //콜백
   });
-{% endhighlight %}
+```
 
 또한 resolve와 reject 함수를 실행할 때 인자를 보내면, then과 catch에서 인자를 사용 가능한다. 
 보통 Try/Catch로 예외 처리를 할때와 같이 promoise의 catch부분에서 또한 오류 메시지를 인자로 보내는 경우가 많다. 이때는 주로 Error 객체를 만들어 보낸다.
-{% highlight ruby %}
+
+```javascript
 function p() {
   return new Promise((resolve, reject) => {
     // pending 상태
@@ -79,4 +81,4 @@ function p() {
 p().catch((error) => {
   console.log(`${error} 1000ms 후 fulfilled 되었습니다.`); //Error: error 1000ms 후 fulfilled 되었습니다.
 });
-{% endhighlight %}
+```
