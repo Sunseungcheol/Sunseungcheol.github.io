@@ -18,7 +18,7 @@ description: >- # used by seo meta and the atom feed
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: "https://sunseungcheol.github.io"
 
-author: Sunseungcheol # change to your full name
+author: your_full_name # change to your full name
 
 avatar: /assets/img/sample/avatar.jpg # support internet resources
 
