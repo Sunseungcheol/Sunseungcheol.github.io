@@ -239,7 +239,7 @@ main {
     margin-top: 0;
   }
 }
-.posts li:not(:first-child, :nth-child(2)) {
+.posts li {
   margin: 15px 0;
   padding: 10px 0;
   border-top: 1px dashed #dedede;
@@ -263,8 +263,11 @@ main {
       border-bottom: 0.5px solid $linkColor;
     }
   }
+  h2 {
+    color: #656363;
+    font-size: 1.3em;
+  }
   h1,
-  h2,
   h3,
   h4,
   h5,
