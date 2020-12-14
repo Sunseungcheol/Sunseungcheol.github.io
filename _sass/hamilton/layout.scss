@@ -417,11 +417,6 @@ ul.social-icons {
  * Posts
  */
 
-.posts li:not(:first-child, :nth-child(2)) {
-  margin: 15px 0;
-  padding: 10px 0;
-  border-top: 1px dashed #dedede;
-}
 .post-header {
   padding-top: $spacing-unit * 2;
   padding-bottom: $spacing-unit;
