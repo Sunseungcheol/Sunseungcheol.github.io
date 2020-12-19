@@ -6,7 +6,7 @@ tags: [React.js, useMemo, useCallback, Hooks]
 
 ### useMemo
 
-useMemo 의 memo 는 `memoization` 을 뜻하는데  `memoization` 이란 기존에 수행한 연산의 결과값을 재사용하는 프로그래밍 기법을 말한다. 즉 
+useMemo 의 memo 는 `memoization` 을 뜻하는데  `memoization` 이란 기존에 수행한 연산의 결과값을 재사용하는 프로그래밍 기법을 말한다. 즉 useMemo 는 값의 변화가 없다면 리렌더링 될 때 새로이 값을 가져오지 않고 이전의 값을 그대로 사용하게 해준다.
 
 ```javascript
 //App.js
