@@ -15,8 +15,10 @@ code {
 }
 
 .language-plaintext {
-  background-color: #dcdcdc;
+  background-color: #dcdcdc !important;
   padding: 5px;
+  color: #666 !important;
   border-radius: 6px;
   margin-right: 0px;
+  margin: 0 5px;
 }
