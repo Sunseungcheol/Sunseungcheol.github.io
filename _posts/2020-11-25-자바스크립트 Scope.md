@@ -1,7 +1,7 @@
 ---
 layout: post
-categories: javaScript
-tags: [javaScript]
+categories: javascript
+tags: [javascript]
 ---
 
 es6부터 사용된 `const`와 `let`은 `var`과 비교했을 때 변수의 유효범위에 차이가 있다.
